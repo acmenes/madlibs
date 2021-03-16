@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="story">
+    <form action="/story">
+        <label class="label">Pick a place</label>
+        <input type="text" placeholder="place" name="place">
+        <br><br>
+        <label class="label">Pick a noun</label>
+        <input type="text" placeholder="noun" name="noun">
+        <br><br>
+        <label class="label">Pick a verb</label>
+        <input type="text" placeholder="verb" name="verb">
+        <br><br>
+        <label class="label">Pick an adjective</label>
+        <input type="text" placeholder="adjective" name="adjective">
+        <br><br>
+        <label class="label">Pick a plural noun</label>
+        <input type="text" placeholder="plural_noun" name="plural_noun">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</div>
+{% endblock %}
